@@ -1,2 +1,5 @@
 # Lyrical-GraphQL
-Starter project from a GraphQL course on Udemy.com
+## 使用技術
+1. Express
+2. GraphQL
+3. React
