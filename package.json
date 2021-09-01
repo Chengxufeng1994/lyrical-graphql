@@ -1,0 +1,38 @@
+{
+  "name": "lyrical",
+  "version": "1.0.0",
+  "description": "Starter point for a graphQL course",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StephenGrider/Lyrical-GraphQL"
+  },
+  "scripts": {
+    "clean": "rimraf **/node_modules",
+    "client": "npm start --prefix client",
+    "server": "nodemon index.js --ignore client",
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "postinstall": "cd client && yarn install"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.16.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.14.0",
+    "express-graphql": "^0.6.1",
+    "express-session": "^1.15.0",
+    "graphql": "^0.8.2",
+    "lodash": "^4.17.4",
+    "mongoose": "^5.13.2",
+    "morgan": "^1.10.0",
+    "nodemon": "*",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
